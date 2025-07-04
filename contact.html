@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Lumière</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <nav> <!-- début Nav bar -->
+        <a class="logo" href="index.html">Studio Lumière<br>Photographie</a>
+        <ul class="categories">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="contactheader"> <!-- début section Header -->
+        <div>
+            <img class="headerimg contactimg" src="Images/Couple câlin assis sur rocher-min.jpg" alt="Un couple se faisant un câlin sur un rocher">
+        </div>
+        <div class="title">
+            <h1>La magie commence ici</h1>
+            <h2>Parlez moi de vous, de vos envies, de ce moment que vous souhaitez immortaliser.</h2>
+            <button onclick="location.href='contact.html'">Discuter de mon projet</button>
+        </div>
+    </header>
+
+    <section class="quote beigebg"> <!-- début section Citation -->
+        <div class="container">
+            <p>" Une photo naît d’un moment<br>que l’on veut garder. "</p>
+        </div>
+    </section>
+
+    <section class="greenbg"> <!-- début section Introduction -->
+        <div class="container">
+            <div class="map">
+                <p>Basé à Lyon, je me déplace avec plaisir partout en France métropolitaine pour vous rejoindre là où votre histoire se vit.<br>Que vous ayez une idée précise ou simplement une envie à partager, ce formulaire est le premier pas vers un souvenir qui vous ressemble.</p>
+                <img src="Images/Map Lyon.jpg" alt="Carte de Lyon">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="beigebg"> <!-- début section Parlez moi de votre projet -->
+        <div class="container experiences">
+            <h3>Parlez moi de votre projet</h3>
+
+            <div class="form"> <!-- Formulaire de contact -->
+                <form action="javascript:void(0);">
+                    <div class="formgroup">
+                        <label for="nom">Nom <span>*</span></label>
+                        <input type="text" id="nom" placeholder="NOM">
+                        <input type="text" id="prenom" placeholder="Prénom">
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="email">Mail <span>*</span></label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="message">Message <span>*</span></label>
+                        <textarea id="message"></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer mon message</button>
+                </form>
+            </div>
+
+            <div class="ending"> 
+                <p>Merci d’avoir parcouru mon univers. J’ai hâte de découvrir le vôtre.</p>
+                <p>A bientôt,</p>
+                <p>Thomas Silvestre</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="prefooter"> <!-- début section Image pré-footer -->
+        <img src="Images/Silouhette homme ciel étoilé-min.jpg" alt="Silouhette d'un homme, de dos, face à un ciel étoilé">
+    </section>
+
+    <footer class="greenbg"> <!-- début section Footer -->
+
+        <div class="container footer">
+            <div class="icons">
+                <a class="logo" href="index.html">Studio Lumière<br>Photographie</a>
+                <div class="socialmedias">
+                    <a href="https://melissa-bavay.notion.site/Hello-Moi-c-est-M-lissa-17f3fd534798809a8ba2ed275debd31a">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://melissa-bavay.notion.site/Hello-Moi-c-est-M-lissa-17f3fd534798809a8ba2ed275debd31a">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://melissa-bavay.notion.site/Hello-Moi-c-est-M-lissa-17f3fd534798809a8ba2ed275debd31a">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a class="page" href="index.html">Accueil</a></li>
+                    <li><a class="page" href="galerie.html">Galerie</a></li>
+                    <li><a class="page" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="page">Conditions générales</li>
+                    <li class="page">Mentions légales</li>
+                    <li class="page">FAQ</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <p class="page">studio.lumiere@gmail.com</p>
+                <button onclick="location.href='contact.html'">Réserver mon shooting</button>
+            </div>
+        </div>
+
+    </footer>
+    
+    
+</body>
+</html>

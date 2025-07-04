@@ -1,0 +1,570 @@
+/* ---------- GENERALITES ---------- */
+
+@font-face {
+    font-family: "KyivType Sans";
+    src: url("Fonts/Dmitry-Rastvortsev-KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "KyivType Sans";
+    src: url("Fonts/Dmitry-Rastvortsev-KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "KyivType Sans";
+    src: url("Fonts/Dmitry-Rastvortsev-KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light.otf");
+    font-weight: 300;
+}
+
+body, p, ul {
+    margin: 0;
+    padding : 0
+}
+
+.container {
+    width: 1322px;
+    margin: 0 auto;
+}
+
+.beigebg {
+    background-color: #FFFAEE;
+    padding: 100px 0px;
+}
+
+.greenbg {
+    background-color: hsla(94, 46%, 83%, 50%);
+    padding: 100px 0px;
+}
+
+.logo {
+    font-family: "Cormorant Infant", serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #221D23;
+}
+
+button {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 400;
+    color: #221D23;
+    background-color: hsla(10, 100%, 72%, 75%);
+    border-radius: 12px;
+    border-style: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: hsla(10, 100%, 72%, 75%);
+    background-color: #FFFAEE;
+    box-shadow: 3px 3px 8px hsla(0, 0%, 0%, 25%);
+}
+
+a {
+    text-decoration: none;
+    color: #221D23;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'KyivType Sans';
+    font-size: 64px;
+    font-weight: 400;
+    color: #FFFAEE;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'KyivType Sans';
+    font-size: 28px;
+    font-weight: 400;
+    color: #FFFAEE;
+}
+
+h3 {
+    margin: 0;
+    font-family: "Cormorant Infant", serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #221D23;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'KyivType Sans';
+    font-size: 40px;
+    font-weight: 400;
+    color: #221D23;
+    margin: 0px 0px 40px;
+}
+
+h5 {
+    font-family: 'KyivType Sans';
+    font-size: 32px;
+    font-weight: 400;
+    color: #221D23;
+    margin: 0;
+}
+
+
+/* Nav bar */
+
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 59px;
+    background-color: #FFFAEE;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    font-family: 'KyivType Sans';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li :hover {
+    color: hsla(10, 100%, 72%, 75%);
+    
+}
+
+
+/* Header */ 
+
+header img {
+    width: 100%;
+    height: 832px;
+    object-fit: cover;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 59px;
+    position: absolute;
+    top: 55%;
+}
+
+.title button {
+    align-self: flex-start;
+}
+
+
+/* Image pré footer */
+
+.prefooter {
+    width: 100%;
+    height: 470px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prefooter img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -450px;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialmedias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    font-size: 32px;
+}
+
+.footer ul, .contact, .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer li, .contact p {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 300;
+    color: #221D23;
+}
+
+.page:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* Citations */
+
+.quote {
+    font-family: "Cormorant Infant", serif;
+    font-size: 44px;
+    font-weight: 400;
+    color: #221D23;
+    text-align: center;
+}
+
+
+
+/* ---------- ACCUEIL ---------- */
+
+/* Expériences photographiques */
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 96px;
+}
+
+.aservice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 162px;
+}
+
+.aservice img {
+    width: 634px;
+    height: 394px;
+    object-fit: cover;
+}
+
+.aservice p {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 300;
+    color: #221D23;
+}
+
+.cta, .ending {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+}
+
+.cta p, .ending p {
+    font-family: 'KyivType Sans';
+    font-size: 32px;
+    font-weight: 400;
+    color: #221D23;
+}
+
+.cta button {
+    align-self: center;
+}
+
+
+/* L'âme derrière la caméra*/
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.thomas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 166px;
+    align-items: center;
+}
+
+.thomas img {
+    width: 476px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.thomas p {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 300;
+    color: #221D23;
+}
+
+
+/* Vos mots, mon moteur */
+
+.allreviews {
+    display: flex;
+    justify-content: space-between;
+    width : 100%;
+    gap: auto;
+    margin-top: 160px;
+}
+
+.areview {
+    background-color: #FFFAEE;
+}
+
+.areview img {
+    width: 416px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.reviewtext {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px;
+    gap: 20px;
+}
+
+.reviewtext h5 {
+    text-align: center;
+}
+
+.reviewtext p {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 300;
+    color: #221D23;
+}
+
+
+/* Mon engagement pour vous */
+
+.undercta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.undertakings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 160px;
+    row-gap: 80px;
+    margin-top: 160px;
+    margin-bottom: 80px;
+}
+
+.bloc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fa-solid {
+    font-size: 40px;
+}
+
+.undertakings p {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 400;
+    color: #221D23;
+}
+
+
+
+/* ---------- GALERIE ---------- */ 
+
+.headerimg {
+    filter: brightness(60%);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 300px);
+    gap: 28px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.img1 {
+    grid-column: 1 / 3 ;
+    grid-row: 1 / 3;
+}
+
+.img2 {
+    grid-column: 1 / 2 ;
+    grid-row: 3 / 5 ;
+}
+
+.img3 {
+    grid-column: 2 / 3 ;
+    grid-row: 3 / 4 ;
+}
+
+.img4 {
+    grid-column: 2 / 3 ;
+    grid-row: 4 / 5 ;
+}
+
+.img5 {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7 ;
+}
+
+.img6 {
+    grid-column: 1 / 2 ;
+    grid-row: 7 / 10 ;
+}
+
+.img7 {
+    grid-column: 2 / 3 ;
+    grid-row: 7 / 8 ;
+}
+
+.img8 {
+    grid-column: 2 / 3;
+    grid-row: 8 / 10 ;
+}
+
+.img9 {
+    grid-column: 1 / 3;
+    grid-row: 10 / 12 ;
+}
+
+
+
+/* ---------- CONTACT ---------- */
+
+/* Header */
+
+.contactheader {
+    width: 100%;
+    height: 832px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contactimg {
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+}
+
+
+/* Map */
+
+.map {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 177px;
+    align-items: center;
+}
+
+.map p {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 300;
+    color: #221D23;
+}
+
+.map img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* Formuliare */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 1000px;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form label {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 500;
+    color: #221D23;
+}
+
+.form span {
+    font-family: 'KyivType Sans';
+    font-size: 24px;
+    font-weight: 500;
+    color: hsla(10, 100%, 72%, 75%);
+}
+
+.formgroup input, textarea {
+    background-color: #FFFAEE;
+    border-radius: 12px;
+    border-color: hsla(290, 9%, 13%, 40%);
+    border-width: 1px;
+    padding: 12px 14px;
+}
+
+.formgroup input {
+    height: 32px;
+}
+
+.formgroup textarea {
+    height: 176px;
+}
+
+input::placeholder {
+    font-family: 'KyivType Sans';
+    font-size: 20px;
+    font-weight: 400;
+    color: hsla(290, 9%, 13%, 60%);
+}
+
+input:focus, textarea:focus {
+    border-color: #221D23;
+}
+
+input, textarea {
+    font-family: 'KyivType Sans';
+    font-size: 20px;
+    font-weight: 400;
+    color: #221D23;
+}
+
+form button {
+    align-self: flex-start;
+}
