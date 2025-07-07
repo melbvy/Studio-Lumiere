@@ -17,24 +17,25 @@
         <ul class="categories">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contactheader">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="contactheader"> <!-- début section Header -->
+    <header id="contactheader" class="contactheader"> <!-- début section Header -->
         <div>
             <img class="headerimg contactimg" src="Images/Couple câlin assis sur rocher-min.jpg" alt="Un couple se faisant un câlin sur un rocher">
         </div>
         <div class="title">
             <h1>La magie commence ici</h1>
             <h2>Parlez moi de vous, de vos envies, de ce moment que vous souhaitez immortaliser.</h2>
-            <button onclick="location.href='contact.html'">Discuter de mon projet</button>
+            <a class="button" href="#contactform">Discuter de mon projet</a>
         </div>
     </header>
 
     <section class="quote beigebg"> <!-- début section Citation -->
         <div class="container">
-            <p>" Une photo naît d’un moment<br>que l’on veut garder. "</p>
+            <p>" Une photo naît d’un moment</p>
+            <p>que l’on veut garder. "</p>
         </div>
     </section>
 
@@ -50,7 +51,7 @@
 
 
 
-    <section class="beigebg"> <!-- début section Parlez moi de votre projet -->
+    <section class="beigebg" id="contactform"> <!-- début section Parlez moi de votre projet -->
         <div class="container experiences">
             <h3>Parlez moi de votre projet</h3>
 
@@ -112,7 +113,7 @@
                 <ul>
                     <li><a class="page" href="index.html">Accueil</a></li>
                     <li><a class="page" href="galerie.html">Galerie</a></li>
-                    <li><a class="page" href="contact.html">Contact</a></li>
+                    <li><a class="page" href="#contactheader">Contact</a></li>
                 </ul>
             </div>
 
@@ -126,7 +127,7 @@
 
             <div class="contact">
                 <p class="page">studio.lumiere@gmail.com</p>
-                <button onclick="location.href='contact.html'">Réserver mon shooting</button>
+                <a class="button" href="#contactform">Réserver mon shooting</a>
             </div>
         </div>
 
